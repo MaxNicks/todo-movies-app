@@ -96,7 +96,13 @@ class MovieContainer extends PureComponent {
             defaultValue={params?.stars}
             component={CustomInput}
           />
-          {!params && <Button title="Add" onPress={handleSubmit(this.handleSubmit)} />}
+          {!params && (
+            <Button
+              title="Add"
+              onPress={handleSubmit(this.handleSubmit)}
+              buttonStyle={styles.button}
+            />
+          )}
         </View>
       </ScrollView>
     );
@@ -126,5 +132,8 @@ const styles = StyleSheet.create({
   inner: {
     justifyContent: 'center',
     padding: 20,
+  },
+  button: {
+    borderRadius: 16,
   },
 });
