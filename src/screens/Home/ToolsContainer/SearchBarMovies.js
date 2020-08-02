@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import { SearchBar } from 'react-native-elements';
 import PropTypes from 'prop-types';
-import { colors } from '../../../assets/styles/color';
 import { StyleSheet } from 'react-native';
+
+import { colors } from '../../../assets/styles/color';
 
 class SearchBarMovies extends PureComponent {
   onChangeText = (text) => {
