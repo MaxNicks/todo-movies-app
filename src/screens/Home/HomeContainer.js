@@ -1,12 +1,13 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, View, ActivityIndicator } from 'react-native';
+import PropTypes from 'prop-types';
+
 import { getDataIsLoaded, getFilterMovies, getFilterText } from '../../store/movies/selectors';
 import { moviesFetchRequested, changeFilterText } from '../../store/movies/actions';
 import MoviesList from './MoviesList/MoviesList';
 import ToolsContainer from './ToolsContainer/ToolsContainer';
 import apiClient from '../../services/api';
-import PropTypes from 'prop-types';
 
 class HomeContainer extends PureComponent {
   componentDidMount() {

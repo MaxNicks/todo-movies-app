@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import { Icon, ListItem } from 'react-native-elements';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-import { colors } from '../../../assets/styles/color';
 import PropTypes from 'prop-types';
+
+import { colors } from '../../../assets/styles/color';
 
 class MoviesListItem extends PureComponent {
   rightElement = () => {
